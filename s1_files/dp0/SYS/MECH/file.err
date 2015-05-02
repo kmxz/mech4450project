@@ -1,13 +1,10 @@
-/COM,ANSYS RELEASE 14.5.7  UP20130316       14:52:05    05/02/2015
+/COM,ANSYS RELEASE 14.5.7  UP20130316       18:07:36    05/02/2015
 
- *** WARNING ***                         CP =       1.654   TIME= 14:52:06
+ *** WARNING ***                         CP =       1.498   TIME= 18:07:37
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       2.278   TIME= 14:52:06
+ *** WARNING ***                         CP =       2.028   TIME= 18:07:37
  Material number 2 (used by element 57168 ) should normally have at      
  least one MP or one TB type command associated with it.  Output of      
  energy by material may not be available.                                
-
- *** WARNING ***                         CP =       6.334   TIME= 14:52:09
- Coefficient ratio exceeds 1.0e8 - Check results.                        
