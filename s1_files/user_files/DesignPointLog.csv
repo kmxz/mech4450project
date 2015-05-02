@@ -1,0 +1,12 @@
+﻿# 
+# This file is written by the ANSYS DesignXplorer add-in and contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: s1
+# Creation date: 02/05/2015 1:23:05 PM
+# 
+# 02/05/2015 1:23:05 PM
+# The parameters defined in the project are:
+# P1 - H1, P2 - H10, P3 - H11, P4 - V6, P5 - V7, P6 - V3, P7 - D2, P8 - H9_PLUS_H11
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name, P1, P2, P3, P4, P5, P6, P7, P8
+DP 0, 42, 5, 12, 5, 6, 2, 6, 37
