@@ -10,3 +10,16 @@
 # The following header line defines the name of the columns by reference to the parameters.
 Name, P1, P2, P3, P4, P5, P6, P7, P8
 DP 0, 42, 5, 12, 5, 6, 2, 6, 37
+# 
+# 03/05/2015 2:06:24 AM
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# P1 - H1, P2 - H10, P3 - H11, P4 - V6, P5 - V7, P6 - V3, P7 - D2, P8 - H9_PLUS_H11, P9 - HALF_HEIGHT, P10 - Safety Factor Minimum
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10
+DP 1, 42, 5, 12, 5, 6, 2, 6, 37, 4.25, 0.40320734416701692
+DP 2, 42, 5, 12, 5, 6, 2, 6, 37, 4.5, 0.44752987450003
+# 
+# A non parametric change occured and invalidated design point results.
+# 03/05/2015 2:11:20 AM
+# 

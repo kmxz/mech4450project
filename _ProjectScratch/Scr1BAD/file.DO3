@@ -1,0 +1,18 @@
+*SET,_ecurr , ELNEXT(_ecurr)
+*SET,_normx , NORMNX(NELEM(_ecurr,1),NELEM(_ecurr,2),NELEM(_ecurr,3))
+*SET,_normy , NORMNY(NELEM(_ecurr,1),NELEM(_ecurr,2),NELEM(_ecurr,3))
+*SET,_normz , NORMNZ(NELEM(_ecurr,1),NELEM(_ecurr,2),NELEM(_ecurr,3))
+*SET,_normmag , sqrt(_normx*_normx + _normy*_normy + _normz*_normz )
+*SET,_normx , _normx/_normmag
+*SET,_normy , _normy/_normmag
+*SET,_normz , _normz/_normmag
+*SET,_dot , _normx*_v1+_normy*_v2+_normz*_v3
+*if,_dot,gt,-.00001,then
+esel,u,elem,,_ecurr
+*else
+csys,11
+*get,_indd,elem,_ecurr,aproj,x
+csys,0
+*SET,_total,_total+_indd
+*endif
+*enddo
