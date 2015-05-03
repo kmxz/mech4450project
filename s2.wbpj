@@ -315,16 +315,17 @@
 "be0f078c-0648-41c4-87f3-8274bc846d34": "/Model/ParameterAdapter2:a626137c-bfa2-4d29-9c42-ea7d6f94376c"
 }</ReferenceList>
     </ReferenceCache>
-    <timestamp-max valType="Int64">7849</timestamp-max>
+    <timestamp-max valType="Int64">8073</timestamp-max>
     <active-designpoint-dirname valType="String">dp0</active-designpoint-dirname>
     <framework-build-version valType="String">14.5.451.0</framework-build-version>
-    <last-saved-utc valType="String">05/02/2015 23:29:39</last-saved-utc>
+    <last-saved-utc valType="String">05/02/2015 23:36:45</last-saved-utc>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">xkong@4225C0906:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents5620.log</ArrayEntry>
       <ArrayEntry Index="1">xkong@4225C0901:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents4720.log</ArrayEntry>
       <ArrayEntry Index="2">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents6548.log</ArrayEntry>
       <ArrayEntry Index="3">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents5392.log</ArrayEntry>
       <ArrayEntry Index="4">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents4548.log</ArrayEntry>
+      <ArrayEntry Index="5">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents5508.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
   </Project>
@@ -397,7 +398,7 @@
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "ErrorsOnLastUpdate": {}, "Parameters": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "2", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "5", "$$a68547ac-c822-41da-9708-e0c0e7769262": "33.5", "$$38485c9a-9709-42d4-9331-f753377921b8": "3.5", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "3.2", "$$432d6012-652a-4033-ab62-124e9b5f0323": "4.7", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "6"}, "ParameterErrors": {}, "CurrentValues": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": 2, "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": 5, "$$a68547ac-c822-41da-9708-e0c0e7769262": 33.5, "$$38485c9a-9709-42d4-9331-f753377921b8": 3.5, "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": 3.2, "$$432d6012-652a-4033-ab62-124e9b5f0323": 4.7, "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": 6, "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": 0.88739428415659671, "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": 18.56512381892 [kg]}, "ParameterStatus": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "UpToDate", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "UpToDate", "$$a68547ac-c822-41da-9708-e0c0e7769262": "UpToDate", "$$38485c9a-9709-42d4-9331-f753377921b8": "UpToDate", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "UpToDate", "$$432d6012-652a-4033-ab62-124e9b5f0323": "UpToDate", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "UpToDate", "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": "UpToDate", "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": "UpToDate"}, "Note": None, "IsUpToDate": True, "IsRetained": True, "CurrentStateExported": False, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "ErrorsOnLastUpdate": {}, "Parameters": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "2", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "5", "$$a68547ac-c822-41da-9708-e0c0e7769262": "33.5", "$$38485c9a-9709-42d4-9331-f753377921b8": "3.5", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "3.2", "$$432d6012-652a-4033-ab62-124e9b5f0323": "4.7", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "6"}, "ParameterErrors": {}, "CurrentValues": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": 2, "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": 5, "$$a68547ac-c822-41da-9708-e0c0e7769262": 33.5, "$$38485c9a-9709-42d4-9331-f753377921b8": 3.5, "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": 3.2, "$$432d6012-652a-4033-ab62-124e9b5f0323": 4.7, "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": 6, "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": 0, "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": 18.56512381892 [kg]}, "ParameterStatus": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "UpToDate", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "UpToDate", "$$a68547ac-c822-41da-9708-e0c0e7769262": "UpToDate", "$$38485c9a-9709-42d4-9331-f753377921b8": "UpToDate", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "UpToDate", "$$432d6012-652a-4033-ab62-124e9b5f0323": "UpToDate", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "UpToDate", "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": "OutOfDate", "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": "OutOfDate"}, "Note": None, "IsUpToDate": False, "IsRetained": True, "CurrentStateExported": False, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
       </Object>
       <Object Name="/Parameters/DesignPoint:1" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
@@ -492,7 +493,7 @@
       <Object Name="/Parameters/Parameter:P9" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P9</object-name>
-        <member-data valType="String">{"DisplayText": "Safety Factor Minimum", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 0.88739428415659671, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "0", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "Safety Factor Minimum", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 0, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "0", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P10" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -571,7 +572,7 @@
       <maxUpdateOrder valType="Double">11</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 7846, "Input": 7847, "Output": 1108}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8056, "Input": 8057, "Output": 1108}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -765,7 +766,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 7658, "Input": 1338, "Output": 1338}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8047, "Input": 1338, "Output": 1338}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
