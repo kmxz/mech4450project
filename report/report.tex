@@ -2,14 +2,22 @@
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage[parfill]{parskip}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{amsmath}
+\usepackage{siunitx}
+\newcommand{\cm}{\,\si{\centi\meter}}
 \begin{document}
 \begin{center}
-\LARGE{MECH 4450 Term Project Report}\\\vspace{1em}
-\Large{Project 2 (Static structure)}\\\vspace{1em}
-\Large{Kong Xiangzhou 20026414}\\\vspace{1em}
+{\LARGE MECH 4450 Term Project Report}\\\vspace{2em}
+{\Large Project 2 (Static structure)}\\\vspace{2em}
+{\Large KONG Xiangzhou 20026414}
+
+{\Large LAM Hoi Pan 20099459}\\\vspace{1em}
 \end{center}
+
+\tableofcontents
+
 \section{Introduction}
 \subsection{Description of the problem}
 The cable anchor is a component at the end of the guy wire that helps to anchor the guyed tower as the picture below shows. It is widely used in engineering structures, such as broadcast transmission towers, bridges and so on. The problem is to analyze the load of the anchor, and to optimize the design.
@@ -27,9 +35,9 @@ Commercial finite element analysis software suite ANSYS will be used.
 \end{itemize}
 
 \subsection{Conditions}
-The material used to build the cable anchor will be structural steel.
+The material used to build the cable anchor is structural steel.
 
-Some dimensions are fixed.  $H9=25cm$, $V7=6cm$, $D1 = 6cm$.
+Some dimensions are fixed.  $H9=25\cm$, $V7=6\cm$, $D1 = 6\cm$.
 
 The cable anchor will be loaded with a axial force of $2\times10^5 N$. On one side, the force will be exerted on the guy wire via a cylindrical surface in a form of frictional force. It can be treated as fixed support. One the other hand, the force is balanced using a bolt put through two holes. Bearing load can be assumed for the situation.
 
@@ -40,52 +48,59 @@ The top view of original design is shown below:
 
 \begin{center}\includegraphics[width=0.75\textwidth]{2D_ORIGIN.png}\end{center}
 
-Where $H1=42cm$, $H10=5cm$, $H11=12cm$, $H9=25cm$, $V3=2cm$, $V6=5cm$, $V7=6cm$, diameters of all holes are $6cm$.
+Where $H1=42\cm$, $H10=5\cm$, $H11=12\cm$, $H9=25\cm$, $V3=2\cm$, $V6=5\cm$, $V7=6\cm$, diameters of all holes are $6\cm$.
 
 It is resembled as below:
 
 \includegraphics[width=\textwidth]{2D_S_01.PNG}
 
-The 3D model built is then as below, where the height of the component is assumed to be $10 cm$:
+The 3D model built is then as below, where the height of the component is assumed to be $10 \cm$:
 
 \includegraphics[width=\textwidth]{3D_S_01.PNG}
-\section{Boundary conditions}
+\subsection{Boundary conditions}
 The boundary conditions are the loads, where symmetric properties on both axis can be assumed.
 
 On the side of the guy wire, it can be treated as fixed support. One the other side, bearing load can be assumed to be each $1\times10^5 N$, and excerted at the wholes. See the parts below for a fihure demonstrating it.
-\section{Parameters to optimize}
-Only the dimensions marked on the provided figure will be optimized. The topology of the anchor will not be changed. In other words, the optimization will be limited to changing the numbers provided.
+\subsection{Parameters to optimize}
+\subsubsection{Optimization of dimensions only}
+In this stage, only the dimensions marked on the provided figure will be optimized. Theshape and topology of the anchor will not be changed. In other words, the optimization will be limited to changing the numbers provided.
 
 To make optimization easier, another set of parameters will be used (note that P6 is not used as the dimension is fixed):
 
 \includegraphics[width=\textwidth]{singleParam/NEW_DIM.PNG}
 
 \begin{align*}
-P1 &= H10\\
-P2 &= H11-H10\\
-P3 &= H1-H11\\
-P4 &= V6\\
-P5 &= V3\\
-P7 &= HEIGHT / 2\\
-P8 &= D2
+P1 \cm &= H10\\
+P2 \cm &= H11-H10\\
+P3 \cm &= H1-H11\\
+P4 \cm &= V6\\
+P5 \cm &= V3\\
+P7 \cm &= HEIGHT / 2\\
+P8 \cm &= D2
 \end{align*}
 
 These parameters will be used in the optimization part of this report.
+\subsubsection{Slight shape modification}
+In this stage, in addition to dimensional changes, the shape itself will change a little bit.
+
+Some rounded corner (fillets/chamfers) will be added, and an additional extruded structure may be annexed. See the optimization part for details.
 \section{FEM analysis}
 \subsection{Mesh setup}
-As this is a 3D model, tetrahedron shape of elements will be used.
+As this is a 3D model, elements of tetrahedron shapes are used.
 
-For the mesh, two refinements are added as below, where the first one (\textit{Refinement}) is for the cylindrical surface of loading, and the second one (\textit{Refinement 2}) is for the sharp edges of 90 degree where stress concentration might occur.
+For the mesh, two refinements are added as below, where the first one (\textit{Refinement}) is for the cylindrical surface of loading, and the second one (\textit{Refinement 2}) is for the sharp edges of 90 degree where stress concentration might occur. More refinements will be added in optimization stage to accomodate the changed shape. See the optimization part for details.
 
 \includegraphics[width=0.5\textwidth]{REF1.PNG}\includegraphics[width=0.5\textwidth]{REF2.PNG}
 
-The overall mesh with a size of $2cm$ is shown below:
+The overall mesh with a size of $2\cm$ is shown below:
 
 \includegraphics[width=0.5\textwidth]{{MESH_0.02}.PNG}\includegraphics[width=0.5\textwidth]{{MESH_0.02F}.PNG}
 \subsection{Boundary conditions setup}
-\includegraphics[width=\textwidth]{Model.PNG}
+As discussed in previous parts, the load from the guy wire is treated as a fixed support, and the load from the bolt is treated as two bearing loads.
+
+\begin{center}\includegraphics[width=0.75\textwidth]{Model.PNG}\end{center}
 \subsection{Results}
-As uniform material is assumed, the local safety factor would be proportional to the local principle stress.
+The maximum principle stress is found to be around $480\si{\mega\pascal}$.
 
 \begin{center}\includegraphics[width=0.75\textwidth]{STRESS_DEFAULT.PNG}\end{center}
 
@@ -93,7 +108,7 @@ We can clear see that the maximum stress is at the four symmetric points: the si
 
 \begin{center}\includegraphics[width=0.5\textwidth]{LOCAL_STRESS.PNG}\end{center}
 
-The local safety factors are shown below:
+As uniform material properties is assumed, the local safety factor would be proportional to the local principle stress. The local safety factors are shown below:
 
 \includegraphics[width=\textwidth]{SF_1.PNG}
 
@@ -102,7 +117,7 @@ The local safety factors are shown below:
 Clearly, as the minimum safety factor is around 0.5, the original design does not meet the requirements.
 
 \subsection{Convergence study}
-For convergence study, mesh sizes of  $3cm$, $2cm$, $1.5cm$m $1cm$, $0.8cm$ and $0.65cm$ are used. The mesh of minimum ($0.65cm$) and maximum ($3cm$) mesh size are shown below:
+For convergence study, mesh sizes of  $3\cm$, $2\cm$, $1.5\cm$, $1\cm$, $0.8\cm$ and $0.65\cm$ are used. The mesh of minimum ($0.65\cm$) and maximum ($3\cm$) mesh size are shown below:
 
 \includegraphics[width=0.5\textwidth]{{MESH_0.0065}.PNG}\includegraphics[width=0.5\textwidth]{{MESH_0.03}.PNG}
 
@@ -143,9 +158,9 @@ The change of both results with mesh sizes can be plotted below (x-axis in recip
      			node[anchor=east] {\val}; 
      	
 	%labels      
-	\node[below=0.5] at (x axis mid) {Mesh size / $cm$};
-	\node[red,rotate=90, above=0.5] at (y1 axis mid) {Max. principle stress / $MPa$};
-	\node[blue,rotate=-90, above=0.5] at (y2 axis mid) {Max. deformation / $10^{-7}m$};
+	\node[below=0.5] at (x axis mid) {Mesh size / $\cm$};
+	\node[red,rotate=90, above=0.5] at (y1 axis mid) {Max. principle stress / $\si{\mega\pascal}$};
+	\node[blue,rotate=-90, above=0.5] at (y2 axis mid) {Max. deformation / $10^{-7}\si{\meter}$};
 
 	%plots
 	\draw[red] ({0.1 / 0.03},{(4.2957 - 4) * 10})  --  ({0.1 / 0.02},{(4.5612 - 4) * 10}) -- ({0.1 / 0.015},{(4.7094 - 4) * 10}) -- ({0.1 / 0.011},{(4.75 - 4) * 10}) --  ({0.1 / 0.008},{(4.7325 - 4) * 10}) -- ({0.1 / 0.0065},{(4.7684 - 4) * 10});
@@ -153,10 +168,12 @@ The change of both results with mesh sizes can be plotted below (x-axis in recip
 \end{tikzpicture}
 \end{center}
 
-We can see it converges. Therefore using a mesh size of $0.65 cm$ in the following study will be reasonable.
+We can see it converges. Therefore the results are reasonable and reliable.
 \section{Optimization}
-\subsection{Manual optimization for individual parameters}
-\subsubsection{Iteration 1}
+The general target of optimization is to achieve a mass (weight) as low as possible, while keeping a safety factor larger than 2.
+
+\subsection{Optimization of dimension only}
+\subsubsection{Manual optimization for individual parameters}
 Change one parameter at a time, while keeping other parameters the same as original design:
 \begin{description}
 \item[P1] $=H10$
@@ -173,7 +190,7 @@ It can be seen that $H11$ can be reduced to save weight without decreasing safet
 
 \includegraphics[width=0.75\textwidth]{singleParam/P3.PNG}
 
-It can be seen that reducing $H1 - H11 - H9$, which is the part outer than the bearings, will reduce the safety factor greatly. That value should be increased instead.
+It can be seen that reducing $H1 - H11 - H9$, which is the part outer than the bearings, can reduce the safety factor greatly. That value should be increased instead.
 \item[P4] $=V6$
 
 \includegraphics[width=0.75\textwidth]{singleParam/P4.PNG}
@@ -193,10 +210,10 @@ It can be seen that increasing the height will increase safety factor greatly. H
 
 \includegraphics[width=0.75\textwidth]{singleParam/P8.PNG}
 
-It can be seen that reducing $D2$ will increase the safety factor, and reduce the weight slightly. However, as reducing $D2$ will decrease the safety of the bolt significantly, it's preferred that $D2$ is kept at $6cm$ and not changed.
+It can be seen that reducing $D2$ will increase the safety factor, and reduce the weight slightly. However, as reducing $D2$ will decrease the safety of the bolt significantly, it's preferred that $D2$ is kept at $6\cm$ and not changed.
 \end{description}
-\subsubsection{Iteration 2}
-As P5($V3$) is the most important factor, this time we only change P5.
+
+As P5($V3$) is the most important factor, we focus more on changing $P5$.
 
 According to the result of iteration 1, we try the following values will be used for other parameters:
 \begin{align*}
@@ -204,25 +221,101 @@ P1 &= 1.5\\
 P2 &= 4\\
 P3 &= 33.5\\
 P4 &= 3.5\\
-P7 &= 4.7\\
-P8 &= 6
+P7 &= 4.7
 \end{align*}
 
 However, this resulted to stress concentration on the cylindrical surface of $D1$. 
 
-TODO
+\begin{center}
+\includegraphics[width=0.5\textwidth]{REF3.PNG}
+\end{center}
 
-\subsection{Automatic optimization}
-The following settings will be used:
+Therefore, we add mesh refinement to the edge of the hole $D1$ to acquire better results. We found that $P2$ cannot be radically reduced, otherwise the cylindrical surface of $D1$ may fail.
+
+\begin{center}
+\includegraphics[width=0.75\textwidth]{REF3_SELF.PNG}
+\end{center}
+
+As manual optimization is too slow when the number of parameters is large, optimization feature provided by ANSYS is used instead.
+
+\subsubsection{Automatic optimization}
+In this stage, ``Direct optimization'' feature is used. The mesh size to be used is $0.8 \cm$, as the license does not permit smaller mesh sizes. 
+
+The targets are set as ``keep safety ratio above 2'' and ``try to minimize the mass''. According to the general idea got in the manual optimization phase, the following settings are used:
 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{OPT_BEFORE.PNG}
 \end{center}
 
+The following results are acquired:
+
+\includegraphics[width=\textwidth]{ASO_RESULT_1.PNG}
+
+Rounding the values, we have the following run:
+
+\includegraphics[width=\textwidth]{EX_OPTM_FINAL.PNG}
+
+The optimization workflow yielded a result of:
+\begin{align*}
+H10 &= P1 \cm = 0.7 \cm\\
+H11 &= (P1 + P2) \cm = 8.7 \cm\\
+H1 &= H11 + P3 \cm = 8.7 \cm + 34.8 \cm = 43.5 \cm\\
+V6 &= P4 \cm = 5.75 \cm\\
+V3 &= P5 \cm = 4.2 \cm\\
+Height &= P7 * 2 \cm = 11.24 \cm\\
+D2 &= 6 \cm 
+\end{align*}
+
+In this case, minimum local safety factor is a tiny bit above 2, and the mass of the anchor is $33.97kg$. 
+
+The corresponding model is built below:
+
+\begin{center}\includegraphics[width=0.75\textwidth]{EX_3.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{EX_2.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.5\textwidth]{EX_1.PNG}\end{center}
+
+The mass is verified as
+
+\begin{center}\includegraphics[width=0.5\textwidth]{EX_4.PNG}\end{center}
+\subsection{Slight shape modification}
+\subsubsection{Shape modifications}
+In this stage, two changes are made.
+
+The first change is adding an extruded part at the holes where the bolt will be put. It can increase the area to support the bolt.
+
+The second change is to add rounded corners at all edges. Not only can it reduce the stress concentration, it can also prevent people get hurt by sharp edges.
+
+Additional mesh refinements are needed, as shown below:
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/REF2.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/GEOMETRY.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/STRESS.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/STRESS2.PNG}\end{center}
+
+From the images, it can be seen that the local principle stress is reduced at the holes for the bolt. Therefore the modification is effective.
+\subsubsection{Further dimensional optimization}
+Similar to before, the height and the outer radius of the extruded part are set as design parameters. Further optimization process is neccessary to optimize the parameters. As other parameters (e.g. $V3$) can be reduced after the shape modification to save weight, these original parameters also need to be included in the optimization workflow.
+
+/* WORK IN PROGRESS */
+
 \section{Conclusion}
 In this design project, the dimension of an anchor is optimized using ANSYS finite element analysis tool. 
 
-We found that the maximum stress is likely to occur at four points, which are the side of the cylindrical surfaces for the bolt. We therefore optimize the design.
+The boundary conditions are set as fixed support and bearing loads. Tetrahedron shaped elements are used to form the mesh, with edges and load points particularly refined. The convergence studies showed that the results are reliable. Notice as the mesh size cannot be further reduced due to ANSYS license limit, the results might not be accurate enough.
 
-TODO
+We found that the maximum stress is likely to occur at four points, which are the side of the cylindrical surfaces for the bolt. We therefore optimize the design accordingly. Increasing $V3$ worked well for this. $H10$ and $H11$ can be reduced to save weight, yet $H11 - H10$ should not be changed much, otherwise the whole for the guy wire might fail.
+
+Modifying the dimension values only, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$.
+
+\section{Appendix}
+The model for the original design is available at \url{https://github.com/kmxz/mech4450project/blob/master/s1.wbpj}.
+
+The optimized design with only dimensions changed is available at \url{https://github.com/kmxz/mech4450project/blob/master/s2.wbpj}.
+
+The optimized design with shapes changed  and round corners added is available at \url{https://github.com/kmxz/mech4450project/blob/master/s3f.wbpj}.
 \end{document}
