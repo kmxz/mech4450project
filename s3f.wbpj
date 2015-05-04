@@ -317,31 +317,16 @@
 "69f8d0e0-fde4-4574-8951-170c3d6e7561": "/Geometry/ParameterAdapter10:DesignModelerParameter",
 "02cd9052-308c-4e39-bb47-0e67c5894661": "/Parameters/Parameter:P12",
 "f3eb2acb-517e-4d55-a5cc-342105a349b0": "/Parameters/Parameter:P11",
-"d1c4a6a7-fd1f-4478-9f84-d74f674b6636": "/Optimization/OptimizationModel:Optimization",
 "b2b83390-1855-47a5-a821-8054b8d72367": "/FileTypesContainer/FileType:ParametersFileType",
 "1b4de122-a55a-42c7-8602-2ac0bdd1d991": "/FileTypesContainer/FileType:DesignXplorerFileType",
-"f32a4d93-09f2-4e6b-9bda-4155aed9db82": "/Schematic/Component:Optimization",
 "7439e257-84ed-41ea-9421-226f3880e3e5": "/Schematic/Template:Direct Optimization",
-"85a3b891-cc3f-4dc8-874d-20c26a2e5511": "/Schematic/ComponentTemplate:DXDirectOptimizationCellTemplate",
-"7ee16e2a-8b8a-4d58-b98b-79dd4f1072d9": "/Schematic/System:DOP",
-"0b95d781-bc13-4760-aa30-5da0eff986c3": "/ReportDataContainer/SystemSection:DOP",
-"8c984d93-bf11-48b9-bab5-952baa02dbc1": "/ReportDataContainer/CellSection:Optimization",
-"9c4c13aa-39b3-4e7b-a28a-d30c66c4937a": "/Optimization/InputParameter:P1",
-"8f439ae6-23ee-4948-b64e-19406a8928d1": "/Optimization/InputParameter:P2",
-"89945803-d5ad-406e-9237-11bd203c84fc": "/Optimization/InputParameter:P3",
-"558778a3-e6bf-4d68-adb0-4e7538b045ad": "/Optimization/InputParameter:P4",
-"45f40539-2710-4efc-9bc5-1ef3fafddfdf": "/Optimization/InputParameter:P5",
-"96d7d9e9-1c40-475a-b9c0-ac6158f12d85": "/Optimization/InputParameter:P7",
-"5944ea76-0c5c-41c8-b0de-b3b70c86388b": "/Optimization/InputParameter:P8",
-"3fe53bae-d575-4757-b3d9-a42fd372c7e6": "/Optimization/InputParameter:P11",
-"75c98e87-a162-4f28-aa89-4ab3b826e6d3": "/Optimization/InputParameter:P12",
-"3c6b6c3f-3728-4525-a182-fdada251903e": "/DXOptimizationEvaluateContainer/ParametricTable:RawDataTable"
+"85a3b891-cc3f-4dc8-874d-20c26a2e5511": "/Schematic/ComponentTemplate:DXDirectOptimizationCellTemplate"
 }</ReferenceList>
     </ReferenceCache>
-    <timestamp-max valType="Int64">119056</timestamp-max>
+    <timestamp-max valType="Int64">119927</timestamp-max>
     <active-designpoint-dirname valType="String">dp0</active-designpoint-dirname>
     <framework-build-version valType="String">14.5.451.0</framework-build-version>
-    <last-saved-utc valType="String">05/03/2015 21:58:37</last-saved-utc>
+    <last-saved-utc valType="String">05/04/2015 15:20:57</last-saved-utc>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">xkong@4225C0906:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents5620.log</ArrayEntry>
       <ArrayEntry Index="1">xkong@4225C0901:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents4720.log</ArrayEntry>
@@ -353,6 +338,8 @@
       <ArrayEntry Index="7">xkong@4225C0705:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents8900.log</ArrayEntry>
       <ArrayEntry Index="8">xkong@4225C0705:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents7604.log</ArrayEntry>
       <ArrayEntry Index="9">xkong@4225C0705:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents7496.log</ArrayEntry>
+      <ArrayEntry Index="10">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents4240.log</ArrayEntry>
+      <ArrayEntry Index="11">xkong@4225C0703:C:\Users\xkong\AppData\Local\Temp\WorkbenchLogs\CoreEvents8184.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
   </Project>
@@ -362,15 +349,7 @@
     <Addin Name="Ansys.ProjectReporting.Addin" Version="3.0" />
     <Addin Name="Ansys.Graphics.GraphicsAddin" Version="1.0" />
     <Addin Name="Ansys.Units.Commands.Addin" Version="4.0" />
-    <Addin Name="Ansys.DesignXplorer.Commands.Addin" Version="15.10">
-      <Preferences>
-        <DX_DisplayParameterFullName valType="Boolean">true</DX_DisplayParameterFullName>
-        <DX_Sensitivity_SignificanceLevel valType="Double">0.025</DX_Sensitivity_SignificanceLevel>
-        <ShowBetaOptions valType="Boolean">false</ShowBetaOptions>
-      </Preferences>
-      <ManagedParameterSetID valType="String">E196240C-9212-4DF7-9920-E19755CECAF3</ManagedParameterSetID>
-    </Addin>
-    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.ProjectSchematic.ProjectSchematicAddin, Ansys.ProjectReporting.Addin, Ansys.Graphics.GraphicsAddin, Ansys.Units.Commands.Addin, Ansys.DesignXplorer.Commands.Addin]</addin-list>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.ProjectSchematic.ProjectSchematicAddin, Ansys.ProjectReporting.Addin, Ansys.Graphics.GraphicsAddin, Ansys.Units.Commands.Addin]</addin-list>
   </Addins>
   <Containers>
     <Container Name="FileContainer" Version="1.0">
@@ -404,22 +383,12 @@
         <object-name valType="String">F6</object-name>
         <member-data valType="String">{"DisplayText": "SYS.mechdb", "FileType": $$dd24f70b-9f78-4ed6-815a-407662560cb3, "DependentFiles": [], "ContainerAssociations": ["Model"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS.mechdb", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F7" Version="1.0">
-        <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F7</object-name>
-        <member-data valType="String">{"DisplayText": "parameters.params", "FileType": $$b2b83390-1855-47a5-a821-8054b8d72367, "DependentFiles": [], "ContainerAssociations": ["Optimization", "DXOptimizationEvaluateContainer"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "Location": r"$(ProjectName)_files\dpall\global\DX\parameters.params", "ReferenceCount": 1}</member-data>
-      </Object>
-      <Object Name="/FileContainer/FileReference:F8" Version="1.0">
-        <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F8</object-name>
-        <member-data valType="String">{"DisplayText": "parameters.dxdb", "FileType": $$1b4de122-a55a-42c7-8602-2ac0bdd1d991, "DependentFiles": [], "ContainerAssociations": ["Optimization", "DXOptimizationEvaluateContainer"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "Location": r"$(ProjectName)_files\dpall\global\DX\parameters.dxdb", "ReferenceCount": 1}</member-data>
-      </Object>
       <container-type valType="String">Project:FileContainer</container-type>
       <static-id valType="String">FileManager</static-id>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119056, "Input": 1106, "Output": 1106}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 119502, "Input": 1106, "Output": 1106}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -445,11 +414,49 @@
         <object-name valType="String">Message 3</object-name>
         <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "Summary": "The Design Points Cache of DesignXplorer has been cleared for the following reason: A non parametric change has occurred in an analysis system.", "Details": "", "Association": "", "DateTimeStamp": 05/04/2015 04:12:54, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None}</member-data>
       </Object>
+      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 4</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "Summary": "PlugIn Error: The model failed to successfully generate in DesignModeler.", "Details": None, "Association": "", "DateTimeStamp": 05/04/2015 18:48:47, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 5" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 5</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "Summary": r"Update of the Model component in Static Structural failed: Unable to attach to geometry file C:\Users\xkong\Documents\kmxz\mech4450project\s3f_files\dp0\SYS\DM\SYS.agdb. Unable to attach geometry.", "Details": """Ansys.Core.Commands.UserReadableFailureException: Unable to attach to geometry file C:\\Users\\xkong\\Documents\\kmxz\\mech4450project\\s3f_files\\dp0\\SYS\\DM\\SYS.agdb. Unable to attach geometry.
+   at Ansys.Addins.Infrastructure.CommandUtilities.CommandHelper.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Unable to attach to geometry file C:\\Users\\xkong\\Documents\\kmxz\\mech4450project\\s3f_files\\dp0\\SYS\\DM\\SYS.agdb. Unable to attach geometry.
+CommandName: Mechanical.RefreshModel(Container=\"Model\", UpdateOptions=Set(HeldLicenseId=None, LicenseStatsId=\"e5a9e9724731481d9fad252efa490d0f\", DesignPointUpdateSolveManager=None, DesignPointUpdateQueue=None, MaxNumberOfCores=1))
+   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.Core.Commands.CommandAsyncResult.Wait()
+   at Ansys.Simulation.Core.Commands.RefreshModel.InvokeAndWait(IProtectedContext context, DataContainerReference Container, ReadOnlyCollection`1 UpstreamContainersToRefresh, Boolean IsBatchMode, Boolean IsUpdateFromCADOnly, ReadOnlyCollection`1 RemainingContainers, UpdateOptions UpdateOptions)
+   at Ansys.Simulation.Core.Commands.UpdateModel.ExecuteCommand(IFullContext context)
+   at Ansys.Addins.Infrastructure.CommandUtilities.CommandHelper.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Unable to attach to geometry file C:\\Users\\xkong\\Documents\\kmxz\\mech4450project\\s3f_files\\dp0\\SYS\\DM\\SYS.agdb. Unable to attach geometry.
+CommandName: Mechanical.UpdateModel(Container=\"Model\", RemainingDownstreamContainers=[\"Setup\", \"Solution\", \"Results\"], UpdateOptions=Set(HeldLicenseId=None, LicenseStatsId=\"e5a9e9724731481d9fad252efa490d0f\", DesignPointUpdateSolveManager=None, DesignPointUpdateQueue=None, MaxNumberOfCores=1))
+   at Ansys.Core.Commands.CommandAsyncResult.WaitForSuspendOrComplete(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.ProjectSchematic.Data.ComponentTemplateEntity.Update(IFullContext context, IProgressMonitor progressMonitor, DataContainerReference container, UpdateOptions updateOptions, List`1 downstream, List`1 allRemaining)
+   at Ansys.ProjectSchematic.Update.UpdateImpl.updateComponent(IFullContext context, UpdateTask task, String trackToken)
+   at Ansys.ProjectSchematic.Update.UpdateImpl.&lt;&gt;c__DisplayClass1d.&lt;updateComponentAndDependencies&gt;b__1b()
+   at Ansys.ProjectSchematic.Update.UpdateImpl.executeWithSelectedErrorBehaviour(Op op, UpdateTask forTask, Op opUponError)
+""", "Association": "", "DateTimeStamp": 05/04/2015 18:48:50, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$889f862e-d644-447c-a767-f835b5dc6120}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 6" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 6</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "Summary": r"Update failed for the Model component in Static Structural.  Unable to attach to geometry file C:\Users\xkong\Documents\kmxz\mech4450project\s3f_files\dp0\SYS\DM\SYS.agdb. Unable to attach geometry.", "Details": """Model in Static Structural
+""", "Association": "", "DateTimeStamp": 05/04/2015 18:48:50, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$889f862e-d644-447c-a767-f835b5dc6120}</member-data>
+      </Object>
       <container-type valType="String">Project:Messages</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 115609, "Input": 1107, "Output": 1107}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 119353, "Input": 1107, "Output": 1107}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -458,7 +465,7 @@
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "ErrorsOnLastUpdate": {}, "Parameters": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "0.7", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "8", "$$a68547ac-c822-41da-9708-e0c0e7769262": "34.8", "$$38485c9a-9709-42d4-9331-f753377921b8": "5.75", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "4.2", "$$432d6012-652a-4033-ab62-124e9b5f0323": "5.62", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "6", "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": "10", "$$02cd9052-308c-4e39-bb47-0e67c5894661": "4"}, "ParameterErrors": {}, "CurrentValues": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": 0.7, "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": 8, "$$a68547ac-c822-41da-9708-e0c0e7769262": 34.8, "$$38485c9a-9709-42d4-9331-f753377921b8": 5.75, "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": 4.2, "$$432d6012-652a-4033-ab62-124e9b5f0323": 5.62, "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": 6, "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": 0, "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": 35.25485963981464 [kg], "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": 10, "$$02cd9052-308c-4e39-bb47-0e67c5894661": 4}, "ParameterStatus": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "UpToDate", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "UpToDate", "$$a68547ac-c822-41da-9708-e0c0e7769262": "UpToDate", "$$38485c9a-9709-42d4-9331-f753377921b8": "UpToDate", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "UpToDate", "$$432d6012-652a-4033-ab62-124e9b5f0323": "UpToDate", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "UpToDate", "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": "OutOfDate", "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": "UpToDate", "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": "UpToDate", "$$02cd9052-308c-4e39-bb47-0e67c5894661": "UpToDate"}, "Note": None, "IsUpToDate": False, "IsRetained": True, "CurrentStateExported": False, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "ErrorsOnLastUpdate": {}, "Parameters": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "0.88", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "6.78", "$$a68547ac-c822-41da-9708-e0c0e7769262": "33", "$$38485c9a-9709-42d4-9331-f753377921b8": "4.69", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "3.1", "$$432d6012-652a-4033-ab62-124e9b5f0323": "5.72", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "6", "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": "10.47", "$$02cd9052-308c-4e39-bb47-0e67c5894661": "3"}, "ParameterErrors": {}, "CurrentValues": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": 0.88, "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": 6.78, "$$a68547ac-c822-41da-9708-e0c0e7769262": 33, "$$38485c9a-9709-42d4-9331-f753377921b8": 4.69, "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": 3.1, "$$432d6012-652a-4033-ab62-124e9b5f0323": 5.72, "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": 6, "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": 2.0072405130818329, "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": 27.154743496996034 [kg], "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": 10.47, "$$02cd9052-308c-4e39-bb47-0e67c5894661": 3}, "ParameterStatus": {"$$f9d48b46-9a56-415b-a019-31ceadd0f6c4": "UpToDate", "$$38e8898c-7dcf-40d3-97fd-dd4c4520d8ca": "UpToDate", "$$a68547ac-c822-41da-9708-e0c0e7769262": "UpToDate", "$$38485c9a-9709-42d4-9331-f753377921b8": "UpToDate", "$$1306b8a0-7b1c-4491-bdff-d71ecd062a2a": "UpToDate", "$$432d6012-652a-4033-ab62-124e9b5f0323": "UpToDate", "$$792d41f0-4a3d-4d2a-8427-3d99cadf5bf1": "UpToDate", "$$2245c511-9c28-44ad-9aa3-1e4db8d98017": "UpToDate", "$$f20e30ac-221a-405f-a28a-5bf3b10087ed": "UpToDate", "$$f3eb2acb-517e-4d55-a5cc-342105a349b0": "UpToDate", "$$02cd9052-308c-4e39-bb47-0e67c5894661": "UpToDate"}, "Note": None, "IsUpToDate": True, "IsRetained": True, "CurrentStateExported": False, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
       </Object>
       <Object Name="/Parameters/GlobalScope:GlobalScope" Version="1.0">
         <class-type valType="String">GlobalScope</class-type>
@@ -468,32 +475,32 @@
       <Object Name="/Parameters/Parameter:P1" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P1</object-name>
-        <member-data valType="String">{"DisplayText": "H10", "Expression": "0.7", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 0.7, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "H10", "Expression": "0.88", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 0.88, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P2" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P2</object-name>
-        <member-data valType="String">{"DisplayText": "H11_MINUS_H10", "Expression": "8", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 8, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "H11_MINUS_H10", "Expression": "6.78", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 6.78, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P3" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P3</object-name>
-        <member-data valType="String">{"DisplayText": "H1_MINUS_H_11", "Expression": "34.8", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 34.8, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "H1_MINUS_H_11", "Expression": "33", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 33, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P4" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P4</object-name>
-        <member-data valType="String">{"DisplayText": "V6", "Expression": "5.75", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 5.75, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "V6", "Expression": "4.69", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 4.69, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P5" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P5</object-name>
-        <member-data valType="String">{"DisplayText": "V3", "Expression": "4.2", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 4.2, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "V3", "Expression": "3.1", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 3.1, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P7" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P7</object-name>
-        <member-data valType="String">{"DisplayText": "HALF_HEIGHT", "Expression": "5.62", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 5.62, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "HALF_HEIGHT", "Expression": "5.72", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 5.72, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P8" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -503,22 +510,22 @@
       <Object Name="/Parameters/Parameter:P9" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P9</object-name>
-        <member-data valType="String">{"DisplayText": "Safety Factor Minimum", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 0, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "0", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "Safety Factor Minimum", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 2.0072405130818329, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "0", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P10" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P10</object-name>
-        <member-data valType="String">{"DisplayText": "Solid Mass", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 35.25485963981464 [kg], "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "16.9553743719125 [kg]", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Mass"}}</member-data>
+        <member-data valType="String">{"DisplayText": "Solid Mass", "Expression": None, "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "DirectOutput", "Value": 27.154743496996034 [kg], "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": "16.9553743719125 [kg]", "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Output", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Mass"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P11" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P11</object-name>
-        <member-data valType="String">{"DisplayText": "DIAMETER_EXT", "Expression": "10", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 10, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "DIAMETER_EXT", "Expression": "10.47", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 10.47, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P12" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P12</object-name>
-        <member-data valType="String">{"DisplayText": "FREE_SECTION", "Expression": "4", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 4, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "FREE_SECTION", "Expression": "3", "IsParameter": True, "Scope": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Usage": "Input", "Value": 3, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Constraints": None, "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Input", "IsParameterizable": True, "ReuseJournalVariables": False, "Max": None, "Min": None, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <ParameterToPropertyMap>
         <Parameter Name="/Parameters/Parameter:P1">
@@ -606,7 +613,7 @@
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 117440, "Input": 117441, "Output": 1108}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 119922, "Input": 119923, "Output": 1108}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -616,11 +623,6 @@
         <class-type valType="String">System</class-type>
         <object-name valType="String">SYS</object-name>
         <member-data valType="String">{"DisplayText": "Static Structural", "Components": [$$2c9e3072-2516-413b-b861-4eba047eb4bf, $$4ebc2f6f-bfd7-429f-a6d0-7e4ec2a365e4, $$889f862e-d644-447c-a767-f835b5dc6120, $$a2c4cd43-3900-4e08-a52d-801634a08e19, $$1b89c07a-0e28-4828-9eb2-d29ced6b8d1d, $$3845fa35-feb3-4f92-a84a-9a1dfed5998f], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$889f862e-d644-447c-a767-f835b5dc6120, $$a2c4cd43-3900-4e08-a52d-801634a08e19], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Structural", "AnalysisType": "Static", "SolverType": "ANSYS", "SolverTypeDisplayString": "Mechanical APDL", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Static Structural", "SystemName": "Static Structural (ANSYS)", "IsCreated": "True", "AlreadyInSystem": "Yes", "VOLATILE:SystemName": "SYS"}, "SystemType": "Static Structural (ANSYS)", "HeaderText": "Static Structural", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_ststructAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$487f7a7b-2963-4e1f-b87f-a72fe431805c, "Notes": None, "LayoutChildren": [], "LayoutIndex": 1}</member-data>
-      </Object>
-      <Object Name="/Schematic/System:DOP" Version="1.0">
-        <class-type valType="String">System</class-type>
-        <object-name valType="String">DOP</object-name>
-        <member-data valType="String">{"DisplayText": "Direct Optimization", "Components": [$$f32a4d93-09f2-4e6b-9bda-4155aed9db82], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {}, "SystemType": "Direct Optimization", "HeaderText": "Direct Optimization", "SystemTypeAbbreviation": "DOP", "UniqueSystemDirectoryName": "DOP", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_dxgdo", "AdditionalSystemHelpId": None, "IsParametric": True, "CreatedFromTemplate": $$7439e257-84ed-41ea-9421-226f3880e3e5, "Notes": None, "LayoutChildren": [], "LayoutIndex": 2}</member-data>
       </Object>
       <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
         <class-type valType="String">SchematicSettings</class-type>
@@ -681,7 +683,7 @@
       <Object Name="/Schematic/Component:Model" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Model</object-name>
-        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Model", "Template": $$0f137d63-ff82-4f4e-8e8c-50a27f57806d, "InSystem": $$8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00, "Sources": {"EngineeringData": {"$$2c9e3072-2516-413b-b861-4eba047eb4bf": None}, "Geometry": {"$$4ebc2f6f-bfd7-429f-a6d0-7e4ec2a365e4": None}}, "Notes": None, "UsedLicenses": {"aa_t_a": 1}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model2", "ComponentStateOnLastFailure": "OutOfDate", "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Model", "Template": $$0f137d63-ff82-4f4e-8e8c-50a27f57806d, "InSystem": $$8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00, "Sources": {"EngineeringData": {"$$2c9e3072-2516-413b-b861-4eba047eb4bf": None}, "Geometry": {"$$4ebc2f6f-bfd7-429f-a6d0-7e4ec2a365e4": None}}, "Notes": None, "UsedLicenses": {"aa_t_a": 1}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Setup" Version="1.0">
         <class-type valType="String">Component</class-type>
@@ -698,17 +700,12 @@
         <object-name valType="String">Results</object-name>
         <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results", "Template": $$bdf3982d-30a7-4799-8486-ba6dd03c71b0, "InSystem": $$8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00, "Sources": {"SimulationSolution": {"$$1b89c07a-0e28-4828-9eb2-d29ced6b8d1d": None}}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "ANSYS", "IsFailedState": False}</member-data>
       </Object>
-      <Object Name="/Schematic/Component:Optimization" Version="1.0">
-        <class-type valType="String">Component</class-type>
-        <object-name valType="String">Optimization</object-name>
-        <member-data valType="String">{"DisplayText": "Optimization", "ImageName": "GoalDrivenOptimization", "ComponentStateOnLastFailure": "UpToDate", "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Optimization", "Template": $$85a3b891-cc3f-4dc8-874d-20c26a2e5511, "InSystem": $$7ee16e2a-8b8a-4d58-b98b-79dd4f1072d9, "Sources": {}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False}</member-data>
-      </Object>
       <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
       <static-id valType="String">Schematic</static-id>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 118616, "Input": 118613, "Output": 1111}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 119924, "Input": 119770, "Output": 1111}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -747,7 +744,7 @@
       <Object Name="/ReportDataContainer/ReportSection:ProjectContents" Version="1.0">
         <class-type valType="String">ReportSection</class-type>
         <object-name valType="String">ProjectContents</object-name>
-        <member-data valType="String">{"DisplayText": "ProjectContents", "IsActive": True, "SectionContents": [], "SubSections": [$$279fbde0-b1e8-4782-bb30-cf3da101d5bf, $$0b95d781-bc13-4760-aa30-5da0eff986c3]}</member-data>
+        <member-data valType="String">{"DisplayText": "ProjectContents", "IsActive": True, "SectionContents": [], "SubSections": [$$279fbde0-b1e8-4782-bb30-cf3da101d5bf]}</member-data>
       </Object>
       <Object Name="/ReportDataContainer/ReportSection:Conclusions" Version="1.0">
         <class-type valType="String">ReportSection</class-type>
@@ -763,11 +760,6 @@
         <class-type valType="String">SystemSection</class-type>
         <object-name valType="String">SYS</object-name>
         <member-data valType="String">{"DisplayText": "SYS", "IsActive": True, "SectionContents": [], "SubSections": [$$932d94ad-57c3-4932-b980-5bd14acfdba7, $$449f639b-036c-4b84-bc99-2db44a0c8d70, $$3570310b-54f5-41b4-bca0-212081d1383d, $$78bc56aa-91a2-40e8-bc47-1e7592a7a265, $$dc26b1ae-36a0-457c-aa07-a9e1c4e1216a, $$ad271ef2-65c0-471a-8802-f63a06f92aba], "IncludeSystemImage": True, "SystemSource": $$8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00}</member-data>
-      </Object>
-      <Object Name="/ReportDataContainer/SystemSection:DOP" Version="1.0">
-        <class-type valType="String">SystemSection</class-type>
-        <object-name valType="String">DOP</object-name>
-        <member-data valType="String">{"DisplayText": "DOP", "IsActive": True, "SectionContents": [], "SubSections": [$$8c984d93-bf11-48b9-bab5-952baa02dbc1], "IncludeSystemImage": True, "SystemSource": $$7ee16e2a-8b8a-4d58-b98b-79dd4f1072d9}</member-data>
       </Object>
       <Object Name="/ReportDataContainer/CellSection:Model 1" Version="1.0">
         <class-type valType="String">CellSection</class-type>
@@ -799,17 +791,12 @@
         <object-name valType="String">Results</object-name>
         <member-data valType="String">{"DisplayText": "Results", "IsActive": True, "SectionContents": [], "SubSections": [], "CellSource": $$3845fa35-feb3-4f92-a84a-9a1dfed5998f}</member-data>
       </Object>
-      <Object Name="/ReportDataContainer/CellSection:Optimization" Version="1.0">
-        <class-type valType="String">CellSection</class-type>
-        <object-name valType="String">Optimization</object-name>
-        <member-data valType="String">{"DisplayText": "Optimization", "IsActive": True, "SectionContents": [], "SubSections": [], "CellSource": $$f32a4d93-09f2-4e6b-9bda-4155aed9db82}</member-data>
-      </Object>
       <container-type valType="String">Ansys.ProjectReporting.Addin:ReportDataContainer</container-type>
       <static-id valType="String">ReportDataContainer</static-id>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 117448, "Input": 118615, "Output": 1328}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 117448, "Input": 119263, "Output": 1328}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -820,7 +807,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 118964, "Input": 1338, "Output": 1338}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 119700, "Input": 1338, "Output": 1338}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -1751,354 +1738,7 @@
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
     </Container>
-    <Container Name="Optimization" Version="1.0">
-      <Object Name="/Optimization/InputParameter:P1" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">1E2A4F3F-1495-4145-B7AB-E34DB519F214</DXParameterID>
-          <NativeInitialValue valType="String">0.7</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P1</object-name>
-        <member-data valType="String">{"DisplayText": "P1 - H10", "ID": "1E2A4F3F-1495-4145-B7AB-E34DB519F214", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 0.63, "UpperBound": 0.76999999999999991, "ConstantValue": 0.7, "CurrentValue": 0.7, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 0.63, "DistributionUpperBound": 0.76999999999999991, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P2" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">402EAB81-D865-4FD1-BEBB-2857DED55970</DXParameterID>
-          <NativeInitialValue valType="String">8</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P2</object-name>
-        <member-data valType="String">{"DisplayText": "P2 - H11_MINUS_H10", "ID": "402EAB81-D865-4FD1-BEBB-2857DED55970", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 7.2, "UpperBound": 8.8, "ConstantValue": 8, "CurrentValue": 8, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 7.2, "DistributionUpperBound": 8.8, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P3" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">051B92E1-81B1-4186-B82A-824AC740602B</DXParameterID>
-          <NativeInitialValue valType="String">34.8</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P3</object-name>
-        <member-data valType="String">{"DisplayText": "P3 - H1_MINUS_H_11", "ID": "051B92E1-81B1-4186-B82A-824AC740602B", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 31.319999999999997, "UpperBound": 38.279999999999994, "ConstantValue": 34.8, "CurrentValue": 34.8, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 31.319999999999997, "DistributionUpperBound": 38.279999999999994, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P4" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">0CEA9EC8-7F2A-4B9B-91BC-4C8D6378A763</DXParameterID>
-          <NativeInitialValue valType="String">5.75</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P4</object-name>
-        <member-data valType="String">{"DisplayText": "P4 - V6", "ID": "0CEA9EC8-7F2A-4B9B-91BC-4C8D6378A763", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 5.175, "UpperBound": 6.325, "ConstantValue": 5.75, "CurrentValue": 5.75, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 5.175, "DistributionUpperBound": 6.325, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P5" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">333EE0D2-C7D3-495A-9862-5AF76DCC10DE</DXParameterID>
-          <NativeInitialValue valType="String">4.2</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P5</object-name>
-        <member-data valType="String">{"DisplayText": "P5 - V3", "ID": "333EE0D2-C7D3-495A-9862-5AF76DCC10DE", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 3.7800000000000002, "UpperBound": 4.62, "ConstantValue": 4.2, "CurrentValue": 4.2, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 3.7800000000000002, "DistributionUpperBound": 4.62, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P7" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">60928217-1BAF-435E-9494-74060AF79F62</DXParameterID>
-          <NativeInitialValue valType="String">5.62</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P7</object-name>
-        <member-data valType="String">{"DisplayText": "P7 - HALF_HEIGHT", "ID": "60928217-1BAF-435E-9494-74060AF79F62", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 5.058, "UpperBound": 6.182, "ConstantValue": 5.62, "CurrentValue": 5.62, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 5.058, "DistributionUpperBound": 6.182, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P8" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">D07623B3-731A-43E3-A28B-E0C4B47735C3</DXParameterID>
-          <NativeInitialValue valType="String">6</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P8</object-name>
-        <member-data valType="String">{"DisplayText": "P8 - D2", "ID": "D07623B3-731A-43E3-A28B-E0C4B47735C3", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": False, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 5.4, "UpperBound": 6.6, "ConstantValue": 6, "CurrentValue": 6, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 5.4, "DistributionUpperBound": 6.6, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P11" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">8E0ECCE7-9C42-4FFB-B46D-1B710C9E376B</DXParameterID>
-          <NativeInitialValue valType="String">10</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P11</object-name>
-        <member-data valType="String">{"DisplayText": "P11 - DIAMETER_EXT", "ID": "8E0ECCE7-9C42-4FFB-B46D-1B710C9E376B", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 9, "UpperBound": 11, "ConstantValue": 10, "CurrentValue": 10, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 9, "DistributionUpperBound": 11, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/InputParameter:P12" Version="2.0">
-        <custom-data>
-          <DXParameterID valType="String">6839C1EC-037F-4DB6-98F8-CE5A1705B590</DXParameterID>
-          <NativeInitialValue valType="String">4</NativeInitialValue>
-          <value-keys valType="String">{"DXParameterID": System.String, "NativeInitialValue": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">InputParameter</class-type>
-        <object-name valType="String">P12</object-name>
-        <member-data valType="String">{"DisplayText": "P12 - FREE_SECTION", "ID": "6839C1EC-037F-4DB6-98F8-CE5A1705B590", "Input": True, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "Enabled": True, "AllowUncertainty": False, "IsEditable": True, "CanBeNonContinous": True, "Type": "DesignVariable", "Nature": "NatureContinuous", "LowerBound": 3.6, "UpperBound": 4.4, "ConstantValue": 4, "CurrentValue": 4, "UseManufacturableValues": False, "NumberOfLevels": 0, "DistributionType": "Gauss", "DistributionLowerBound": 3.6, "DistributionUpperBound": 4.4, "Attribute1": 0, "Attribute2": 0, "Mean": 0, "StandardDeviation": 0, "Skewness": 0, "Kurtosis": 0, "DistributionChart": None, "DiscreteLevels": [], "DiscreteLevelValues": [], "DiscreteType": "Integer", "ManufacturableValues": []}</member-data>
-      </Object>
-      <Object Name="/Optimization/OutputParameter:P9" Version="1.0">
-        <custom-data>
-          <DXParameterID valType="String">0805F6F3-126F-4F65-8963-9AF8027E679C</DXParameterID>
-          <_lowerbound valType="String">0</_lowerbound>
-          <_upperbound valType="String">0</_upperbound>
-          <value-keys valType="String">{"DXParameterID": System.String, "_lowerbound": System.Double, "_upperbound": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">OutputParameter</class-type>
-        <object-name valType="String">P9</object-name>
-        <member-data valType="String">{"DisplayText": "P9 - Safety Factor Minimum", "ID": "0805F6F3-126F-4F65-8963-9AF8027E679C", "Input": False, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Dimensionless", "Units": None, "DataUnits": None, "LowerBound": 0, "CurrentValue": 0, "UpperBound": 0, "InheritFromModelSettings": True, "MaxPredictedRelativeError": 5, "PredictedRelativeError": -1, "TransformationType": "TransTypeYeo", "FTestFiltering": True, "CalculatedExtremum": False, "IsDerived": False}</member-data>
-      </Object>
-      <Object Name="/Optimization/OutputParameter:P10" Version="1.0">
-        <custom-data>
-          <DXParameterID valType="String">B6D3CC9B-8E1F-4A0B-842F-B68B47924447</DXParameterID>
-          <_lowerbound valType="String">0</_lowerbound>
-          <_upperbound valType="String">0</_upperbound>
-          <value-keys valType="String">{"DXParameterID": System.String, "_lowerbound": System.Double, "_upperbound": System.Double}</value-keys>
-        </custom-data>
-        <class-type valType="String">OutputParameter</class-type>
-        <object-name valType="String">P10</object-name>
-        <member-data valType="String">{"DisplayText": "P10 - Solid Mass", "ID": "B6D3CC9B-8E1F-4A0B-842F-B68B47924447", "Input": False, "ParameterSetID": "4387B115-8C95-4A1C-974C-EE5B90C7E9AB", "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "QuantityName": "Mass", "Units": "kg", "DataUnits": "kg", "LowerBound": 0, "CurrentValue": 35.25485963981464, "UpperBound": 0, "InheritFromModelSettings": True, "MaxPredictedRelativeError": 5, "PredictedRelativeError": -1, "TransformationType": "TransTypeYeo", "FTestFiltering": True, "CalculatedExtremum": False, "IsDerived": False}</member-data>
-      </Object>
-      <Object Name="/Optimization/ParametricContext:ParametricContext" Version="2.0">
-        <custom-data>
-          <MetaModelsMap>
-            <Z8B3B52A5-A0A6-405B-910D-6A8A3A200637 valType="String">d1c4a6a7-fd1f-4478-9f84-d74f674b6636</Z8B3B52A5-A0A6-405B-910D-6A8A3A200637>
-            <value-keys valType="String">{"Z8B3B52A5-A0A6-405B-910D-6A8A3A200637": System.String}</value-keys>
-          </MetaModelsMap>
-          <DXContextID valType="String">63ed8b28-e337-460e-bbd2-c86de470032f</DXContextID>
-          <DemoMode valType="String">False</DemoMode>
-          <TimeStamp valType="String">3</TimeStamp>
-          <value-keys valType="String">{"DXContextID": System.String, "DemoMode": System.Boolean, "TimeStamp": System.Int64}</value-keys>
-          <dictionary-keys valType="String">[MetaModelsMap]</dictionary-keys>
-        </custom-data>
-        <class-type valType="String">ParametricContext</class-type>
-        <object-name valType="String">ParametricContext</object-name>
-        <member-data valType="String">{"DisplayText": "ParametricContext", "ID": "63ed8b28-e337-460e-bbd2-c86de470032f", "ParameterSetChanged": {}}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationModel:Optimization" Version="5.0">
-        <custom-data>
-          <ModelState>
-            <Version valType="String">2</Version>
-            <State valType="String">3</State>
-            <Details valType="String">2096</Details>
-            <CannotRunReasons valType="String">0</CannotRunReasons>
-            <QuickHelpId valType="String">wb2qh_DXOPTood</QuickHelpId>
-            <Message valType="String"></Message>
-            <value-keys valType="String">{"Version": System.Int32, "State": System.Int32, "Details": System.Int32, "CannotRunReasons": System.UInt64, "QuickHelpId": System.String, "Message": System.String}</value-keys>
-          </ModelState>
-          <DXMetaModelID valType="String">8B3B52A5-A0A6-405B-910D-6A8A3A200637</DXMetaModelID>
-          <TimeStamp valType="String">0</TimeStamp>
-          <DXVersion valType="String">12.1</DXVersion>
-          <ModelDataObjectClassVersion valType="String">1</ModelDataObjectClassVersion>
-          <value-keys valType="String">{"DXMetaModelID": System.String, "TimeStamp": System.Int64, "DXVersion": System.String, "ModelDataObjectClassVersion": System.Int32}</value-keys>
-          <dictionary-keys valType="String">[ModelState]</dictionary-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationModel</class-type>
-        <object-name valType="String">Optimization</object-name>
-        <member-data valType="String">{"DisplayText": "Optimization", "ID": "8B3B52A5-A0A6-405B-910D-6A8A3A200637", "SolveStatus": "MMNOT_SOLVED", "Nature": "NatureOptimization", "Dirty": False, "DXContextName": "63ed8b28-e337-460e-bbd2-c86de470032f", "HasParent": False, "Edited": True, "Caption": "Optimization", "TimeStamp": "0", "KeepDPs": False, "RetainDPs": False, "OptimizeUpdateOrder": False, "DesignPointsStatus": None, "NumberOfRetries": 0, "RetryDelay": "120 [s]", "OptimizationMethod": "OT_Screening", "NumberOfSamples": 100, "NumberOfInitialSamples": 100, "NumberOfLHSInitialSamples": 45, "NumberOfScreeningSamples": 800, "NumberOfStartingPoints": 45, "NumSamplesPerIter": 50, "ParetoPercentage": 70, "CurrentParetoPercentage": 0, "MaxConvPercentage": 1E-06, "MaxNumIterations": 20, "MaxNumEvaluations": 180, "MaxNumDomainReductions": 20, "PercentageOfDomainReductions": 0.1, "DerivativeApproximationType": "DA_ForwardDifference", "InitialSamples": 0, "ConstrHandlingType": "E_NO_PENALTY", "SampleSetSize": 0, "MaxNumCandidates": 3, "VerifyCandidatePoints": False, "NumIterations": 0, "NumberOfEvaluations": 0, "NumberOfDomainReductions": 0, "NumberOfDuplicates": 0, "NumberOfFailures": 0, "NumCandidates": 0}</member-data>
-      </Object>
-      <Object Name="/Optimization/DesignPointsDataTransfer:DesignPointsDataTransfer" Version="1.0">
-        <class-type valType="String">DesignPointsDataTransfer</class-type>
-        <object-name valType="String">DesignPointsDataTransfer</object-name>
-        <member-data valType="String">{"DisplayText": "DesignPointsDataTransfer", "Model": $$d1c4a6a7-fd1f-4478-9f84-d74f674b6636}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P1" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">1554703D-3946-4AD9-A6F8-E89F71DADCAD</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P1</object-name>
-        <member-data valType="String">{"DisplayText": "P1", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P2" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">2EFDE07B-AF8C-4099-8925-3086EBF13FF8</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P2</object-name>
-        <member-data valType="String">{"DisplayText": "P2", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P3" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">57E44D81-3A87-48F4-B20E-98F70E37F584</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P3</object-name>
-        <member-data valType="String">{"DisplayText": "P3", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P4" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">EC1DA7F5-AFC6-4632-94D2-9BEF96B5B5CE</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P4</object-name>
-        <member-data valType="String">{"DisplayText": "P4", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P5" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">85C8AB50-A1AD-45D3-AED9-F5C60D588971</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P5</object-name>
-        <member-data valType="String">{"DisplayText": "P5", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P7" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">E261453E-F12E-4068-90C7-761E06F56DB2</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P7</object-name>
-        <member-data valType="String">{"DisplayText": "P7", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P8" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">D69480A8-7055-45EB-9C40-1142848E8EFD</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P8</object-name>
-        <member-data valType="String">{"DisplayText": "P8", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P11" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">04EEC960-D981-4DC7-A90F-16142CF62CE3</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P11</object-name>
-        <member-data valType="String">{"DisplayText": "P11", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P12" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">B4032C3A-0B8D-445C-BB7D-43DC4FFDDCEC</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P12</object-name>
-        <member-data valType="String">{"DisplayText": "P12", "CreationTimeStamp": 0, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P9" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">EF09BB2E-E347-42DD-84F0-FDD3E55796E8</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P9</object-name>
-        <member-data valType="String">{"DisplayText": "P9 &gt;= 2", "CreationTimeStamp": 2, "HistoryChart": None}</member-data>
-      </Object>
-      <Object Name="/Optimization/OptimizationCriterion:P10" Version="3.0">
-        <custom-data>
-          <DXGoalID valType="String">83A9671B-72DB-4ED8-808F-A04C79E2A393</DXGoalID>
-          <DisplayTextIsCustomized valType="String">False</DisplayTextIsCustomized>
-          <value-keys valType="String">{"DXGoalID": System.String, "DisplayTextIsCustomized": System.Boolean}</value-keys>
-        </custom-data>
-        <class-type valType="String">OptimizationCriterion</class-type>
-        <object-name valType="String">P10</object-name>
-        <member-data valType="String">{"DisplayText": "Minimize P10", "CreationTimeStamp": 1, "HistoryChart": None}</member-data>
-      </Object>
-      <container-type valType="String">Ansys.DesignXplorer.Commands.Addin:Optimization</container-type>
-      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
-      <ChartFeaturesCount valType="Int32">0</ChartFeaturesCount>
-      <InfoSystemsCount valType="Int32">1</InfoSystemsCount>
-      <InfoSystems valType="StringArray">
-        <ArrayEntry Index="0">8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00</ArrayEntry>
-        <ArrayEntry Index="1">Static Structural</ArrayEntry>
-        <ArrayEntry Index="2">static_structural</ArrayEntry>
-      </InfoSystems>
-      <InputSystemsCount valType="Int32">1</InputSystemsCount>
-      <InputParameters_0Count valType="Int32">10</InputParameters_0Count>
-      <InputParameters_0 valType="StringArray">
-        <ArrayEntry Index="0">8fe5e730-0cf3-4a4e-8c1d-d83cf3a5db00</ArrayEntry>
-        <ArrayEntry Index="1">9c4c13aa-39b3-4e7b-a28a-d30c66c4937a</ArrayEntry>
-        <ArrayEntry Index="2">8f439ae6-23ee-4948-b64e-19406a8928d1</ArrayEntry>
-        <ArrayEntry Index="3">89945803-d5ad-406e-9237-11bd203c84fc</ArrayEntry>
-        <ArrayEntry Index="4">558778a3-e6bf-4d68-adb0-4e7538b045ad</ArrayEntry>
-        <ArrayEntry Index="5">45f40539-2710-4efc-9bc5-1ef3fafddfdf</ArrayEntry>
-        <ArrayEntry Index="6">96d7d9e9-1c40-475a-b9c0-ac6158f12d85</ArrayEntry>
-        <ArrayEntry Index="7">5944ea76-0c5c-41c8-b0de-b3b70c86388b</ArrayEntry>
-        <ArrayEntry Index="8">3fe53bae-d575-4757-b3d9-a42fd372c7e6</ArrayEntry>
-        <ArrayEntry Index="9">75c98e87-a162-4f28-aa89-4ab3b826e6d3</ArrayEntry>
-      </InputParameters_0>
-      <OutputSystemsCount valType="Int32">0</OutputSystemsCount>
-      <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 118634, "Input": 118646, "Output": 118633}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{}</last-update-regen-times>
-      <unique-system-dir valType="String">DOP</unique-system-dir>
-      <contains-significant-data valType="Boolean">true</contains-significant-data>
-    </Container>
-    <Container Name="DXOptimizationEvaluateContainer" Version="1.0">
-      <Object Name="/DXOptimizationEvaluateContainer/ParametricTable:RawDataTable" Version="1.0">
-        <custom-data>
-          <DXDataTableID valType="String">5E01D420-ADF3-4336-9B4F-AF2B87D6038F</DXDataTableID>
-          <value-keys valType="String">{"DXDataTableID": System.String}</value-keys>
-        </custom-data>
-        <class-type valType="String">ParametricTable</class-type>
-        <object-name valType="String">RawDataTable</object-name>
-        <member-data valType="String">{"DisplayText": "Raw Optimization Data", "IsUpToDate": True, "OutputValuesEditable": False, "HasUpdateOrder": False, "MaxUpdateOrder": 0}</member-data>
-      </Object>
-      <Object Name="/DXOptimizationEvaluateContainer/ParametricTable:DesignPoints" Version="1.0">
-        <custom-data>
-          <DXDataTableID valType="String">8CCF603D-FDE0-46A0-A416-FE371936810E</DXDataTableID>
-          <value-keys valType="String">{"DXDataTableID": System.String}</value-keys>
-        </custom-data>
-        <class-type valType="String">ParametricTable</class-type>
-        <object-name valType="String">DesignPoints</object-name>
-        <member-data valType="String">{"DisplayText": "Candidate Points", "IsUpToDate": False, "OutputValuesEditable": False, "HasUpdateOrder": False, "MaxUpdateOrder": 0}</member-data>
-      </Object>
-      <Object Name="/DXOptimizationEvaluateContainer/Evaluation:ChartEvaluation" Version="1.0">
-        <custom-data>
-          <DXEvaluationObjectID valType="String">ChartEvaluation_NeedNewInstance</DXEvaluationObjectID>
-          <value-keys valType="String">{"DXEvaluationObjectID": System.String}</value-keys>
-        </custom-data>
-        <class-type valType="String">Evaluation</class-type>
-        <object-name valType="String">ChartEvaluation</object-name>
-        <member-data valType="String">{"DisplayText": "ChartEvaluation", "InputData": None, "OutputData": None, "Model": $$d1c4a6a7-fd1f-4478-9f84-d74f674b6636}</member-data>
-      </Object>
-      <Object Name="/DXOptimizationEvaluateContainer/Evaluation:MainEvaluation" Version="1.0">
-        <custom-data>
-          <DXEvaluationObjectID valType="String">MainEvaluation_NeedNewInstance</DXEvaluationObjectID>
-          <value-keys valType="String">{"DXEvaluationObjectID": System.String}</value-keys>
-        </custom-data>
-        <class-type valType="String">Evaluation</class-type>
-        <object-name valType="String">MainEvaluation</object-name>
-        <member-data valType="String">{"DisplayText": "MainEvaluation", "InputData": $$3c6b6c3f-3728-4525-a182-fdada251903e, "OutputData": $$3c6b6c3f-3728-4525-a182-fdada251903e, "Model": $$d1c4a6a7-fd1f-4478-9f84-d74f674b6636}</member-data>
-      </Object>
-      <container-type valType="String">Ansys.DesignXplorer.Commands.Addin:Evaluate</container-type>
-      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
-      <isInitializedForEvaluation valType="Boolean">true</isInitializedForEvaluation>
-      <model valType="String">d1c4a6a7-fd1f-4478-9f84-d74f674b6636</model>
-      <ChartFeaturesCount valType="Int32">0</ChartFeaturesCount>
-      <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119049, "Input": 119052, "Output": 117465}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{}</last-update-regen-times>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
-    </Container>
-    <container-map valType="String">{"FileContainer": Project:FileContainer, "Messages": Project:Messages, "Parameters": Ansys.ParameterManager.ParameterManagerAddin:parameters, "Schematic": Ansys.ProjectSchematic.ProjectSchematicAddin:Default, "ReportDataContainer": Ansys.ProjectReporting.Addin:ReportDataContainer, "Graphics": Ansys.Graphics.GraphicsAddin:graphics, "Units": Ansys.Units.Commands.Addin:Units, "Optimization": Ansys.DesignXplorer.Commands.Addin:Optimization, "DXOptimizationEvaluateContainer": Ansys.DesignXplorer.Commands.Addin:Evaluate}</container-map>
+    <container-map valType="String">{"FileContainer": Project:FileContainer, "Messages": Project:Messages, "Parameters": Ansys.ParameterManager.ParameterManagerAddin:parameters, "Schematic": Ansys.ProjectSchematic.ProjectSchematicAddin:Default, "ReportDataContainer": Ansys.ProjectReporting.Addin:ReportDataContainer, "Graphics": Ansys.Graphics.GraphicsAddin:graphics, "Units": Ansys.Units.Commands.Addin:Units}</container-map>
     <static-container-ids valType="String">{"FileContainer": FileManager, "Parameters": Parameters, "Schematic": Schematic, "ReportDataContainer": ReportDataContainer, "Graphics": Graphics, "Units": Units}</static-container-ids>
   </Containers>
 </Storage>
