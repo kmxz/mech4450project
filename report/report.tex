@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{siunitx}
 \newcommand{\cm}{\,\si{\centi\meter}}
+\newcommand{\kg}{\,\si{\kilo\gram}}
 \begin{document}
 \begin{center}
 {\LARGE MECH 4450 Term Project Report}\\\vspace{2em}
@@ -245,13 +246,17 @@ Therefore, we add mesh refinement to the edge of the hole $D1$ to acquire better
 As manual optimization is too slow when the number of parameters is large, optimization feature provided by ANSYS is used instead.
 
 \subsubsection{Automatic optimization}
-In this stage, ``Direct optimization'' feature is used. The mesh size to be used is $0.8 \cm$, as the license does not permit smaller mesh sizes. 
+In this stage, ``Direct optimization'' feature is used for simpllicity. The mesh size to be used is $0.8 \cm$, as the license does not permit smaller mesh sizes. 
 
 The targets are set as ``keep safety ratio above 2'' and ``try to minimize the mass''. According to the general idea got in the manual optimization phase, the following settings are used:
 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{OPT_BEFORE.PNG}
 \end{center}
+
+As there is only one target, which is to lower the mass (safety factor is a constraint instead), multi-objective algorithms like MOGA (Multi-Objective Genetic Algorithm) is not needed.
+
+ANSYS provides a mode named Screening, which is essentially running brute-force trials over different parameter configurations. Also, Adaptive Single-Objective mode is provided. The optimization process will utilize those two methods. The NLPQL (on-Linear Programming by Quadratic Lagrangian) is already included in Adaptive Single-Objective mode, therefore it is not neccessary to use stand-alone NLPQL method.
 
 The following results are acquired:
 
@@ -272,7 +277,7 @@ Height &= P7 * 2 \cm = 11.24 \cm\\
 D2 &= 6 \cm 
 \end{align*}
 
-In this case, minimum local safety factor is a tiny bit above 2, and the mass of the anchor is $33.97kg$. 
+In this case, minimum local safety factor is a tiny bit above 2, and the mass of the anchor is $33.97\kg$. 
 
 The corresponding model is built below:
 
@@ -293,7 +298,15 @@ The first change is annexing an extruded part at the holes where the bolt will b
 
 \begin{center}\includegraphics[width=0.75\textwidth]{NX/GEOMETRY.PNG}\end{center}
 
-The second change is to add rounded corners at all edges. Not only can it reduce the stress concentration, it can also prevent people get hurt by sharp edges. The annexed extruded part, the end of two legs and the base of two legs are partucularly. To be exact, the radii at the end of legs are $5cm$, the radii at the base of the legs are $2.5cm$, the radii at the top edge of extruded parts are $1cm$, and the radii at the bottom of the extruded parts are $2cm$.
+The second change is to add rounded corners at all edges. Not only can it reduce the stress concentration, it can also prevent people get hurt by sharp edges. The annexed extruded part, the end of two legs and the base of two legs are partucularly. To be exact, the radii at the end of legs are $5\cm$, the radii at the top edge of extruded parts are $1\cm$, the radii at the bottom of the extruded parts are $2\cm$, and the radii at the base of the legs are $2.5\cm$. Screenshots are attached below:
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/FI1.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/FI2.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/FI3.PNG}\end{center}
+
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/FI4.PNG}\end{center}
 
 Additional mesh refinements are needed, as shown below:
 
@@ -313,6 +326,8 @@ Similar to before, the height and the outer diameter of the extruded part can be
 
 The new parameters are namely $P11\cm$, the outer diameter, and $P12 \cm$, which is $3\cm$ minus the height of the extruded part. It can be seen that $2 \times P12 \geq D1$, say $P12 \geq 3$; otherwise it might cause inconvinience for the installation of the guy wire.
 
+Similar to the previous optimization process, $0.8\cm$-sized mesh will be used, and Adaptive Single-Objective optimization mode will be utilized.
+
 /* WORK IN PROGRESS */
 
 The dimensions might not be optimum, as the running optimization flow in ANSYS in the lab is very slow, so only a few samples of design parameters are tested. It would be better if we can rent Tianhe-2 supercomputer to compute.
@@ -327,9 +342,9 @@ We found that the maximum stress is likely to occur at four points, which are th
 
 In addition to the fixed dimensions in the problem description, $D2$ is not changed either, in order to work well with the bolt safely. In a general target of ``reduce weight as much as possible as long as safety factor stays above 2'', ``direct optimization'' feature provided by ANSYS is used to search for improved parameters.
 
-Modifying the dimension values only, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$. 
+Modifying the dimension values only, an minimum mass of $33.97\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
 
-After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$. 
+After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $33.97\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
 \section{Appendix}
 The exported ANSYS project files including the simulation results are downloadable below. 
 \begin{description}
