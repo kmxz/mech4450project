@@ -3,8 +3,6 @@ dp0/global/MECH/SYS.mechdb
 dp0/SYS/DM/SYS.agdb
 dp0/SYS/ENGD/EngineeringData.xml
 dp0/SYS/ENGD/material.engd
-dp0/SYS/MECH/CAERep.xml
-dp0/SYS/MECH/ds.dat
 dp0/designPoint.wbdp
 dpall/global/DX/parameters.dxdb
 dpall/global/DX/parameters.params
