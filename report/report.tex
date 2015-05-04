@@ -287,25 +287,31 @@ The mass is verified as
 \begin{center}\includegraphics[width=0.5\textwidth]{EX_4.PNG}\end{center}
 \subsection{Slight shape modification}
 \subsubsection{Shape modifications}
-In this stage, two changes are made.
+In this stage, two changes are made basing on the optimized dimension above.
 
-The first change is adding an extruded part at the holes where the bolt will be put. It can increase the area to support the bolt.
+The first change is annexing an extruded part at the holes where the bolt will be put. It can increase the area to support the bolt, as shown below. The inner diameter is consistent with $D2$, which is now fixed to be $6cm$. The outer diameter and the height are variable.
 
-The second change is to add rounded corners at all edges. Not only can it reduce the stress concentration, it can also prevent people get hurt by sharp edges.
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/GEOMETRY.PNG}\end{center}
+
+The second change is to add rounded corners at all edges. Not only can it reduce the stress concentration, it can also prevent people get hurt by sharp edges. The annexed extruded part, the end of two legs and the base of two legs are partucularly. To be exact, the radii at the end of legs are $5cm$, the radii at the base of the legs are $2.5cm$, the radii at the top edge of extruded parts are $1cm$, and the radii at the bottom of the extruded parts are $2cm$.
 
 Additional mesh refinements are needed, as shown below:
 
 \begin{center}\includegraphics[width=0.75\textwidth]{NX/REF2.PNG}\end{center}
 
-\begin{center}\includegraphics[width=0.75\textwidth]{NX/GEOMETRY.PNG}\end{center}
+The local principle stresses are shown below:
 
-\begin{center}\includegraphics[width=0.75\textwidth]{NX/STRESS.PNG}\end{center}
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/STRESS_F.PNG}\end{center}
 
-\begin{center}\includegraphics[width=0.75\textwidth]{NX/STRESS2.PNG}\end{center}
+The local safety factor is shown below:
 
-From the images, it can be seen that the local principle stress is reduced at the holes for the bolt. Therefore the modification is effective.
+\begin{center}\includegraphics[width=0.75\textwidth]{NX/SF_F.PNG}\end{center}
+
+From the images, it can be seen that the local principle stress is reduced at the holes for the bolt. The minimum local safety factor is increased from $2$ to $2.24$, while the weight is almost the same. Therefore the modification is effective.
 \subsubsection{Further dimensional optimization}
-Similar to before, the height and the outer radius of the extruded part are set as design parameters. Further optimization process is neccessary to optimize the parameters. As other parameters (e.g. $V3$) can be reduced after the shape modification to save weight, these original parameters also need to be included in the optimization workflow.
+Similar to before, the height and the outer diameter of the extruded part can be changed. Further optimization process is neccessary to optimize the parameters. As other parameters (e.g. $V3$) can be reduced after the shape modification to save weight, these original parameters also need to be included in the optimization workflow.
+
+The new parameters are namely $P11\cm$, the outer diameter, and $P12 \cm$, which is $3\cm$ minus the height of the extruded part. It can be seen that $2 \times P12 \geq D1$, say $P12 \geq 3$; otherwise it might cause inconvinience for the installation of the guy wire.
 
 /* WORK IN PROGRESS */
 
@@ -330,5 +336,11 @@ The exported ANSYS project files including the simulation results are downloadab
 \item[Original design] \url{https://github.com/kmxz/mech4450project/blob/master/s1.wbpj}.
 \item[Optimized design, only dimensions changed] \url{https://github.com/kmxz/mech4450project/blob/master/s2.wbpj}.
 \item[Optimized design, with slight shape modification] \url{https://github.com/kmxz/mech4450project/blob/master/s3f.wbpj}.
+\end{description}
+
+Raw optimization results not included in the report are available at
+\begin{description}
+\item[Only dimensions changed] \url{https://github.com/kmxz/mech4450project/tree/master/optimization_results}.
+\item[With slight shape modification] \url{https://github.com/kmxz/mech4450project/tree/master/shape_optimization_results}.
 \end{description}
 \end{document}
