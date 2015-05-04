@@ -26,20 +26,22 @@ The cable anchor is a component at the end of the guy wire that helps to anchor 
 
 In the analysis part, it is need to find out the points where failure is most possible to happen. In other words, the place where maximum local stress occurs. The design part will be discussed below.
 
-Commercial finite element analysis software suite ANSYS will be used.
+Commercial finite element analysis software suite ANSYS will be used for the entire workflow including 3D modeling, FEM analysis and optimization.
 \subsection{Design objectives}
 \begin{itemize}
 \item The safety factor is required to be at least 2. 
 \item The weight of the structure should be minimized.
 \item Dimensions should be adjusted in a way that other components (the guy wire and the bolt) will also have a good safefy factor, and the connection between the anchor and other components are safe enough. For example, decrease $D2$ may increase the safety factor and reduce the weight of the anchor itself, but it will reduce the safety factor of the bolt significantly.
+\item When possible, avoid hurting people (rounded corners will be preferred); manufacturability will also be considered.
+\item Preserve the fundamental shape of original design. The general shape of the frame should be kept consistent with the original design. Redesigning from scratch is therefore not desired. The fixed dimensions should also be respected. 
 \end{itemize}
 
 \subsection{Conditions}
 The material used to build the cable anchor is structural steel.
 
-Some dimensions are fixed.  $H9=25\cm$, $V7=6\cm$, $D1 = 6\cm$.
+Some dimensions are fixed. $H9=25\cm$, $V7=6\cm$, $D1 = 6\cm$.
 
-The cable anchor will be loaded with a axial force of $2\times10^5 N$. On one side, the force will be exerted on the guy wire via a cylindrical surface in a form of frictional force. It can be treated as fixed support. One the other hand, the force is balanced using a bolt put through two holes. Bearing load can be assumed for the situation.
+The cable anchor will be loaded with a axial force of $2\times10^5 N$. On one side, the force will be exerted on the guy wire via a cylindrical surface in a form of frictional force. It can be treated as a fixed support. One the other hand, the force is balanced using a bolt put through two holes. Bearing load can be assumed for the situation.
 
 Symmetrical model can be assumed. 
 \section{Program modelling}
@@ -57,6 +59,8 @@ It is resembled as below:
 The 3D model built is then as below, where the height of the component is assumed to be $10 \cm$:
 
 \includegraphics[width=\textwidth]{3D_S_01.PNG}
+
+The dimensions (except the fixed ones), are set as design parameters for the convinience of optimization.
 \subsection{Boundary conditions}
 The boundary conditions are the loads, where symmetric properties on both axis can be assumed.
 
@@ -104,6 +108,8 @@ The maximum principle stress is found to be around $480\si{\mega\pascal}$.
 
 \begin{center}\includegraphics[width=0.75\textwidth]{STRESS_DEFAULT.PNG}\end{center}
 
+As fixed support is assumed on the side of guy wire, and the origin of the coordinate system is also on that side, the maximum displacement is at the right end, around $0.39 \si{\milli\meter}$. Figures can be found in the convergence study part.
+
 We can clear see that the maximum stress is at the four symmetric points: the side end of the wholes. They are exactly the points where failure is most possible to happen.  An enlarged figure below shows it better:
 
 \begin{center}\includegraphics[width=0.5\textwidth]{LOCAL_STRESS.PNG}\end{center}
@@ -114,7 +120,7 @@ As uniform material properties is assumed, the local safety factor would be prop
 
 \includegraphics[width=\textwidth]{SF_2.PNG}
 
-Clearly, as the minimum safety factor is around 0.5, the original design does not meet the requirements.
+Clearly, as the minimum safety factor is around $0.5$, the original design does not meet the requirements.
 
 \subsection{Convergence study}
 For convergence study, mesh sizes of  $3\cm$, $2\cm$, $1.5\cm$, $1\cm$, $0.8\cm$ and $0.65\cm$ are used. The mesh of minimum ($0.65\cm$) and maximum ($3\cm$) mesh size are shown below:
@@ -303,19 +309,26 @@ Similar to before, the height and the outer radius of the extruded part are set 
 
 /* WORK IN PROGRESS */
 
-\section{Conclusion}
-In this design project, the dimension of an anchor is optimized using ANSYS finite element analysis tool. 
+The dimensions might not be optimum, as the running optimization flow in ANSYS in the lab is very slow, so only a few samples of design parameters are tested. It would be better if we can rent Tianhe-2 supercomputer to compute.
 
-The boundary conditions are set as fixed support and bearing loads. Tetrahedron shaped elements are used to form the mesh, with edges and load points particularly refined. The convergence studies showed that the results are reliable. Notice as the mesh size cannot be further reduced due to ANSYS license limit, the results might not be accurate enough.
+Further shape modifications are also possible, including using non-uniform crosssesctional area for two arms, using rounded shape at the end for holding the guy wire, and annexing extruded part on the hole for the guy wire, similar to the modifications at the holes for the bolt. Those approaches can reduce weight by using less material using smaller dimensions, while keeping acceptable safety factor by reinforcing the places where local strss is high. Using rounded shape for all parts can reduce the weight and reduce stress concentration at corners. However, those design are not simulated due to time limit. 
+\section{Conclusion}
+In this design project, the stress of anchor under loading is simulated, and the dimensions and shape of it are optimized using ANSYS finite element analysis tool.
+
+The principles of optimization is discussed. The boundary conditions are set as fixed support and bearing loads. Tetrahedron shaped elements are used to form the mesh, with edges and load points particularly refined. The convergence studies showed that the results are reliable. Notice as the mesh size cannot be further reduced due to ANSYS license limit, the results might not be accurate enough.
 
 We found that the maximum stress is likely to occur at four points, which are the side of the cylindrical surfaces for the bolt. We therefore optimize the design accordingly. Increasing $V3$ worked well for this. $H10$ and $H11$ can be reduced to save weight, yet $H11 - H10$ should not be changed much, otherwise the whole for the guy wire might fail.
 
-Modifying the dimension values only, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$.
+In addition to the fixed dimensions in the problem description, $D2$ is not changed either, in order to work well with the bolt safely. In a general target of ``reduce weight as much as possible as long as safety factor stays above 2'', ``direct optimization'' feature provided by ANSYS is used to search for improved parameters.
 
+Modifying the dimension values only, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$. 
+
+After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $33.97$ kg can be achieved while satisfying the safety factor requirement of $2$. 
 \section{Appendix}
-The model for the original design is available at \url{https://github.com/kmxz/mech4450project/blob/master/s1.wbpj}.
-
-The optimized design with only dimensions changed is available at \url{https://github.com/kmxz/mech4450project/blob/master/s2.wbpj}.
-
-The optimized design with shapes changed  and round corners added is available at \url{https://github.com/kmxz/mech4450project/blob/master/s3f.wbpj}.
+The exported ANSYS project files including the simulation results are downloadable below. 
+\begin{description}
+\item[Original design] \url{https://github.com/kmxz/mech4450project/blob/master/s1.wbpj}.
+\item[Optimized design, only dimensions changed] \url{https://github.com/kmxz/mech4450project/blob/master/s2.wbpj}.
+\item[Optimized design, with slight shape modification] \url{https://github.com/kmxz/mech4450project/blob/master/s3f.wbpj}.
+\end{description}
 \end{document}
