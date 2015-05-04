@@ -105,11 +105,11 @@ As discussed in previous parts, the load from the guy wire is treated as a fixed
 
 \begin{center}\includegraphics[width=0.75\textwidth]{Model.PNG}\end{center}
 \subsection{Results}
-The maximum principle stress is found to be around $480\si{\mega\pascal}$.
+The maximum principle stress is found to be around $480\,\si{\mega\pascal}$.
 
 \begin{center}\includegraphics[width=0.75\textwidth]{STRESS_DEFAULT.PNG}\end{center}
 
-As fixed support is assumed on the side of guy wire, and the origin of the coordinate system is also on that side, the maximum displacement is at the right end, around $0.39 \si{\milli\meter}$. Figures can be found in the convergence study part.
+As fixed support is assumed on the side of guy wire, and the origin of the coordinate system is also on that side, the maximum displacement is at the right end, around $0.39\,\si{\milli\meter}$. Figures can be found in the convergence study part.
 
 We can clear see that the maximum stress is at the four symmetric points: the side end of the wholes. They are exactly the points where failure is most possible to happen.  An enlarged figure below shows it better:
 
@@ -167,7 +167,7 @@ The change of both results with mesh sizes can be plotted below (x-axis in recip
 	%labels      
 	\node[below=0.5] at (x axis mid) {Mesh size / $\cm$};
 	\node[red,rotate=90, above=0.5] at (y1 axis mid) {Max. principle stress / $\si{\mega\pascal}$};
-	\node[blue,rotate=-90, above=0.5] at (y2 axis mid) {Max. deformation / $10^{-7}\si{\meter}$};
+	\node[blue,rotate=-90, above=0.5] at (y2 axis mid) {Max. deformation / $10^{-7}\,\si{\meter}$};
 
 	%plots
 	\draw[red] ({0.1 / 0.03},{(4.2957 - 4) * 10})  --  ({0.1 / 0.02},{(4.5612 - 4) * 10}) -- ({0.1 / 0.015},{(4.7094 - 4) * 10}) -- ({0.1 / 0.011},{(4.75 - 4) * 10}) --  ({0.1 / 0.008},{(4.7325 - 4) * 10}) -- ({0.1 / 0.0065},{(4.7684 - 4) * 10});
@@ -269,11 +269,11 @@ Rounding the values, we have the following run:
 The optimization workflow yielded a result of:
 \begin{align*}
 H10 &= P1 \cm = 0.7 \cm\\
-H11 &= (P1 + P2) \cm = 8.7 \cm\\
+H11 &= (P1 + P2) \cm = (0.7 + 8) \cm = 8.7 \cm\\
 H1 &= H11 + P3 \cm = 8.7 \cm + 34.8 \cm = 43.5 \cm\\
 V6 &= P4 \cm = 5.75 \cm\\
 V3 &= P5 \cm = 4.2 \cm\\
-Height &= P7 * 2 \cm = 11.24 \cm\\
+Height &= P7 * 2 \cm = 5.62 \times 2 \cm = 11.24 \cm\\
 D2 &= 6 \cm 
 \end{align*}
 
@@ -328,7 +328,45 @@ The new parameters are namely $P11\cm$, the outer diameter, and $P12 \cm$, which
 
 Similar to the previous optimization process, $0.8\cm$-sized mesh will be used, and Adaptive Single-Objective optimization mode will be utilized.
 
-/* WORK IN PROGRESS */
+The optimum parameter set found by ANSYS is:
+
+\includegraphics[width=\textwidth]{NX/best.png}
+
+After rounding the dimensions and verify using finer mesh, we have:
+
+\includegraphics[width=\textwidth]{NX/Finale.PNG}
+
+\begin{align*}
+H10 &= P1 \cm = 0.88 \cm\\
+H11 &= (P1 + P2) \cm = (0.88 + 6.78) \cm = 7.66 \cm\\
+H1 &= H11 + P3 \cm = 7.66 \cm + 33 \cm = 40.66 \cm\\
+V6 &= P4 \cm = 4.69 \cm\\
+V3 &= P5 \cm = 3.1 \cm\\
+Height &= P7 * 2 \cm = 5.72 \times 2 \cm = 11.44 \cm\\
+D2 &= 6 \cm\\
+External\,diameter\,of\,extruded\,parts &= P11\cm = 10.47\cm\\
+Height\,of\,each\,extruded\,part &= 3\cm
+\end{align*}
+
+Local stresses are shown below, where maximum local stress is $1.246\,\si{\mega\pascal}$:
+
+\includegraphics[width=\textwidth]{NX/fin_stress.PNG}
+
+\includegraphics[width=\textwidth]{NX/fin_stress2.PNG}
+
+The deformation are:
+
+\includegraphics[width=\textwidth]{NX/fin_deform.PNG}
+
+The local safety factors:
+
+\begin{center}\includegraphics[width=0.5\textwidth]{NX/fin_sf.PNG}\end{center}
+
+And lastly, the mass:
+
+\begin{center}\includegraphics[width=0.5\textwidth]{NX/fin_mass.PNG}\end{center}
+
+We an see that a mass of $27.16\kg$ is achieved while the safety factor is kept above $2$ a little bit .
 
 The dimensions might not be optimum, as the running optimization flow in ANSYS in the lab is very slow, so only a few samples of design parameters are tested. It would be better if we can rent Tianhe-2 supercomputer to compute.
 
@@ -344,7 +382,7 @@ In addition to the fixed dimensions in the problem description, $D2$ is not chan
 
 Modifying the dimension values only, an minimum mass of $33.97\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
 
-After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $33.97\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
+After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $27.16\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
 \section{Appendix}
 The exported ANSYS project files including the simulation results are downloadable below. 
 \begin{description}
