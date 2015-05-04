@@ -1,5 +1,6 @@
 *.rst
 *_files.backup
 *_files/dp*
-
+*.wbpz
+.lock
 
