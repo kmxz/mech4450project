@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{amsmath}
+\usepackage{breakurl}
 \usepackage{siunitx}
 \newcommand{\cm}{\,\si{\centi\meter}}
 \newcommand{\kg}{\,\si{\kilo\gram}}
@@ -344,7 +345,7 @@ V6 &= P4 \cm = 4.69 \cm\\
 V3 &= P5 \cm = 3.1 \cm\\
 Height &= P7 * 2 \cm = 5.72 \times 2 \cm = 11.44 \cm\\
 D2 &= 6 \cm\\
-External\,diameter\,of\,extruded\,parts &= P11\cm = 10.47\cm\\
+External\,\Phi\,of\,extruded\,parts &= P11\cm = 10.47\cm\\
 Height\,of\,each\,extruded\,part &= 3\cm
 \end{align*}
 
@@ -384,16 +385,9 @@ Modifying the dimension values only, an minimum mass of $33.97\kg$ can be achiev
 
 After adding fillets and annexing an extruded tube to hold the bolt, an minimum mass of $27.16\kg$ can be achieved while satisfying the safety factor requirement of $2$. 
 \section{Appendix}
-The exported ANSYS project files including the simulation results are downloadable below. 
-\begin{description}
-\item[Original design] \url{https://github.com/kmxz/mech4450project/blob/master/s1.wbpj}.
-\item[Optimized design, only dimensions changed] \url{https://github.com/kmxz/mech4450project/blob/master/s2.wbpj}.
-\item[Optimized design, with slight shape modification] \url{https://github.com/kmxz/mech4450project/blob/master/s3f.wbpj}.
-\end{description}
+The exported ANSYS project files including the simulation results are downloadable from \url{https://github.com/kmxz/mech4450project/releases/}. 
 
-Raw optimization results not included in the report are available at
-\begin{description}
-\item[Only dimensions changed] \url{https://github.com/kmxz/mech4450project/tree/master/optimization_results}.
-\item[With slight shape modification] \url{https://github.com/kmxz/mech4450project/tree/master/shape_optimization_results}.
-\end{description}
+Three files are available there. One is for the original design; one is for the optimized design with only dimensions changed; and one is for the further optimized design with slight shape modification.
+
+Optimization results not included in the report are available at \url{https://github.com/kmxz/mech4450project/tree/master/shape_optimization_results}.
 \end{document}
